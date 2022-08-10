@@ -22,10 +22,34 @@
     </header>
 
     <main>
-        <label>
-            Name:
-            <input id="name">
-        </label>
+        <section class="controls">
+            <label>
+                Name:
+                <input id="name">
+            </label>
+
+            <label>
+                Animal:
+                <select id="animal-select">
+                    <option disabled selected>choose an animal...</option>
+                    <option>Cat</option>
+                    <option>Dog</option>
+                    <option>Bird</option>
+                    <option>Lizard</option>
+                </select>
+            </label>
+
+            <label>
+                Image
+                <input type="file">
+            </label>
+        </section>
+
+        <section>
+            <h2 id="name-display"></h2>
+            <p id="animal-display"></p>
+            <img id="image-display">
+        </section>
     </main>
 
     <footer>&copy;2022 Software Developer</footer>
