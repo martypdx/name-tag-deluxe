@@ -1,5 +1,7 @@
 :root {
     --background: rgb(224, 234, 247);
+    --offset: rgb(220, 235, 185);
+    --offset-dark: rgb(151, 163, 124);
     --header-background: white;
     --footer-background: rgb(243, 242, 242);
 }
@@ -34,7 +36,34 @@ footer {
     background-color: var(--footer-background);
 }
 
+section {
+    margin: 20px 0;
+}
+
 .controls {
     display: grid;
     gap: 10px;
+}
+
+.name-tag {
+    padding: 30px;
+    width: 400px;
+    margin: aut0;
+    background: var(--offset);
+    border: 1px solid var(--offset-dark);
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        'image  name'
+        'image  animal';
+    gap: 20px;
+}
+
+#image-display {
+    grid-area: image;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
 }
